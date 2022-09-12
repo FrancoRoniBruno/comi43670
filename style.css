@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+/*pagina principal */
+}
+body{
+  background-color:aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title {
+  font-style: oblique;
+  font-size: 50px;
+  text-align: center;
+}
+nav {
+  position: relative;
+  margin: 10px auto 0;
+  width: 590px;
+  height: 50px;
+  background: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
+}
+nav a:nth-child(1) {
+  width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+nav a:nth-child(2) {
+  width: 110px;
+}
+nav .start-home,
+a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+}
+nav a:nth-child(3) {
+  width: 100px;
+}
+nav .start-home,
+a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+}
+nav a:nth-child(4) {
+  width: 160px;
+}
+nav .start-home,
+a:nth-child(4):hover ~ .animation {
+  width: 160px;
+  left: 310px;
+}
+nav a:nth-child(5) {
+  width: 120px;
+}
+nav .start-home,
+a:nth-child(5):hover ~ .animation {
+  width: 120px;
+  left: 470px;
+}
+.parallax {
+  background-image: url("./img/bandera.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+.imgPrincipal{
+  display: flex;
+  justify-content: space-evenly;
+}
+main section article img {
+  margin: 20px;
+  padding: 20px;
+}
+.instituciones{
+  text-align: center;
+}
+.info{
+  border: groove 8px grey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lista {
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  border: solid 2px black;
+  display: inline-block;
+  text-align: center;
+}
+.back {
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: chocolate;
+}
+.noticia {
+  text-align: center;
+}
+#imagenNoticia{
+  display: flex;
+  justify-content: space-evenly;
+}
+.parrafoInstituciones {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.parrafoNoticia {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* galeria */
+.imgNino{
+  display:grid;
+  grid-template-columns: repeat(3,0.5fr);
+  grid-template-rows: repeat(3,0.5fr);
+  gap: 10px;
+  justify-items: center;
+}
+.consejo{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* actividades*/
+.imgHockey{
+  display: flex;
+  justify-content: space-evenly;
+}
+.imgPatin{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* contacto*/
+.form__container{
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+fieldset{
+  display: flex;
+  flex-direction: column;
+}
+.form__container--fieldset{
+  padding: 15px;
+  width: 40%;
+  color:black;
+  font-weight: bold;
+  background:cornflowerblue;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.ubicacion{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+/*pie de pagina */
+footer{
+  margin-top: 1rem;
+  border: solid 8px black;
+  position: sticky;
+  background-color: coral;
+  bottom: 0;
+}
+footer a {
+  text-decoration: none;
+  color:black;
+}
+@media only screen and (max-width: 768px){
+  body{
+    flex-direction: column;
+    align-items: center;
+  }
+  /*index*/
+  .imgPrincipal{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #imagenNoticia{
+    flex-direction: column;
+  }
+  /* galeria */
+  .imgNino{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+  }
+  /* actividades*/
+  .imgHockey{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+  }
+  .imgPatin{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 576px){
+  body{
+    flex-direction: column;
+    align-items: center;
+  } 
+  /*index*/
+   .imgPrincipal{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #imagenNoticia{
+    flex-direction: column;
+  }
+  /* galeria*/
+  .imgNino{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9,1fr);
+    justify-items: center;
+  }
+  /* actividades*/
+  .imgHockey{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+  }
+  .imgPatin{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+  }
+}
