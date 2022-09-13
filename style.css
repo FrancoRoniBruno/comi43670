@@ -116,6 +116,26 @@ main section article img {
   border: groove 8px grey;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.animacion:hover{
+  animation :cambioDeColores 5s;
+}
+@keyframes cambioDeColores{
+  5%{
+    background-color: aqua;
+  }
+  25%{
+    background-color: greenyellow;
+  }
+  50%{
+    background-color: yellowgreen;
+  }
+  75%{
+    background-color: olive;
+  }
+  90%{
+    background-color: orange;
+  }
+}
 .lista {
   text-align: center;
   list-style: none;
