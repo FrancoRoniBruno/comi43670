@@ -152,9 +152,9 @@ main section article img {
 .noticia {
   text-align: center;
 }
-#imagenNoticia{
-  display: flex;
-  justify-content: space-evenly;
+.imgNoticia{
+  width: 450px;
+  height: 450px;
 }
 .parrafoInstituciones {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
