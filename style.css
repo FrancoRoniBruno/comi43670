@@ -1,22 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-/*pagina principal */
+  /*pagina principal */
 }
-body{
-  background-color:aliceblue;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex: 1;
-  background: rgb(34,193,195);
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,191,45,1) 100%);
+
+body {
+  background-color: aliceblue;
 }
+
 .title {
   font-style: oblique;
   font-size: 50px;
   text-align: center;
 }
+
 nav {
   position: relative;
   margin: 10px auto 0;
@@ -39,6 +36,7 @@ nav a {
   display: inline-block;
   text-align: center;
 }
+
 nav .animation {
   position: absolute;
   height: 100%;
@@ -48,46 +46,57 @@ nav .animation {
   border-radius: 8px;
   transition: all 0.5s ease 0s;
 }
+
 nav a:nth-child(1) {
   width: 100px;
 }
+
 nav .start-home,
 a:nth-child(1):hover ~ .animation {
   width: 100px;
   left: 0;
 }
+
 nav a:nth-child(2) {
   width: 110px;
 }
+
 nav .start-home,
 a:nth-child(2):hover ~ .animation {
   width: 110px;
   left: 100px;
 }
+
 nav a:nth-child(3) {
   width: 100px;
 }
+
 nav .start-home,
 a:nth-child(3):hover ~ .animation {
   width: 100px;
   left: 210px;
 }
+
 nav a:nth-child(4) {
   width: 160px;
 }
+
 nav .start-home,
 a:nth-child(4):hover ~ .animation {
   width: 160px;
   left: 310px;
 }
+
 nav a:nth-child(5) {
   width: 120px;
 }
+
 nav .start-home,
 a:nth-child(5):hover ~ .animation {
   width: 120px;
   left: 470px;
 }
+
 .parallax {
   background-image: url("./img/bandera.jpg");
   height: 700px;
@@ -97,42 +106,48 @@ a:nth-child(5):hover ~ .animation {
   background-size: cover;
   margin-bottom: 50px;
 }
-.imgPrincipal{
+
+.imgPrincipal {
   display: flex;
   justify-content: space-evenly;
 }
-.skew:hover{
-  transform: skew(20deg);
+
+.scale:hover {
+  transform: scale();
   transition: 1s;
 }
+
 main section article img {
   margin: 20px;
   padding: 20px;
 }
-.instituciones{
+
+.instituciones {
   text-align: center;
 }
-.info{
-  border: groove 8px grey;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.info {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.animacion:hover{
-  animation :cambioDeColores 5s;
+
+.animacion:hover {
+  animation: cambioDeColores 5s;
 }
-@keyframes cambioDeColores{
-  5%{
+
+@keyframes cambioDeColores {
+  5% {
     background-color: aqua;
   }
-  25%{
+  25% {
     background-color: greenyellow;
   }
-  50%{
+  50% {
     background-color: yellowgreen;
   }
-  75%{
+  75% {
     background-color: olive;
   }
-  90%{
+  90% {
     background-color: orange;
   }
 }
@@ -144,154 +159,178 @@ main section article img {
   display: inline-block;
   text-align: center;
 }
+
 .back {
   text-decoration: none;
   border: 1px solid black;
   background-color: chocolate;
 }
+
 .noticia {
   text-align: center;
 }
-.imgNoticia{
+
+.imgNoticia {
   width: 450px;
   height: 450px;
 }
+
+.txtInst {
+  display: flex;
+  justify-content: center;
+}
+
 .parrafoInstituciones {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .parrafoNoticia {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 /* galeria */
-.imgNino{
-  display:grid;
-  grid-template-columns: repeat(3,0.5fr);
-  grid-template-rows: repeat(3,0.5fr);
+.imgNino {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(3, 0.5fr);
   gap: 10px;
   justify-items: center;
 }
-.consejo{
+
+.imgConsejo {
   margin-top: 1rem;
   display: flex;
   justify-content: space-evenly;
 }
+
 /* actividades*/
-.imgHockey{
+.imgHockey {
   display: flex;
   justify-content: space-evenly;
 }
-.imgPatin{
+
+.imgPatin {
   display: flex;
   justify-content: space-evenly;
 }
+
 /* contacto*/
-.form__container{
+.form__container {
   display: flex;
   margin-top: 1rem;
   justify-content: center;
 }
-fieldset{
+
+fieldset {
   display: flex;
   flex-direction: column;
 }
-.form__container--fieldset{
+
+.form__container--fieldset {
   padding: 15px;
   width: 40%;
-  color:black;
+  color: black;
   font-weight: bold;
-  background:cornflowerblue;
+  background: cornflowerblue;
   font-size: 1.2rem;
   border-radius: 5px;
 }
-.ubicacion{
+
+.ubicacion {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.mapa{
+
+.mapa {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 /*pie de pagina */
-footer{
+footer {
   margin-top: 1rem;
   border: solid 8px black;
-  position: sticky;
-  background-color: coral;
   bottom: 0;
 }
 footer a {
   text-decoration: none;
-  color:black;
+  color: black;
 }
-@media only screen and (max-width: 768px){
-  body{
+
+@media only screen and (max-width: 768px) {
+  body {
     flex-direction: column;
     align-items: center;
   }
   /*index*/
-  .imgPrincipal{
+  .imgPrincipal {
     flex-direction: column;
     justify-content: center;
   }
-  #imagenNoticia{
+  #imagenNoticia {
     flex-direction: column;
   }
   /* galeria */
-  .imgNino{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
+  .imgNino {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .imgConsejo {
+    flex-wrap: wrap;
   }
   /* actividades*/
-  .imgHockey{
+  .imgHockey {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
   }
-  .imgPatin{
+  .imgPatin {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
   }
 }
-@media only screen and (max-width: 576px){
-  body{
+@media only screen and (max-width: 576px) {
+  body {
     flex-direction: column;
     align-items: center;
-  } 
+  }
   /*index*/
-   .imgPrincipal{
+  .imgPrincipal {
     flex-direction: column;
     justify-content: center;
   }
-  #imagenNoticia{
+  #imagenNoticia {
     flex-direction: column;
   }
   /* galeria*/
-  .imgNino{
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(9,1fr);
+  .imgNino {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     justify-items: center;
+  }
+  .imgConsejo {
+    flex-wrap: wrap;
   }
   /* actividades*/
-  .imgHockey{
+  .imgHockey {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
   }
-  .imgPatin{
+  .imgPatin {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
