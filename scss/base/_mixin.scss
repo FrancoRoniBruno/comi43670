@@ -1,0 +1,18 @@
+@mixin vista{
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion{
+    @include vista();
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+.txtInst{
+    @include vista();
+  }
+.mapa{
+    @include vista();
+    align-items: center;
+    margin-bottom: 1rem;
+}

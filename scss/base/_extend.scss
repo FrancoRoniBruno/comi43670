@@ -1,0 +1,19 @@
+%disposicion{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imgHockey{
+    @extend %disposicion;
+  }
+.imgPatin{
+    @extend %disposicion;
+  }
+.imgConsejo{
+    margin-top: 1rem;
+    @extend %disposicion;
+  }
+.imgPrincipal{
+    display: flex;
+    justify-content: space-evenly;
+}
