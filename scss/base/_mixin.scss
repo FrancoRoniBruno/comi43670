@@ -2,7 +2,33 @@
     display: flex;
     justify-content: center;
 }
-
+@mixin margen {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form__container{
+  @include vista();
+  margin-top: 1rem;
+  }
+.primerTitulo{
+  text-align: center;
+  @include margen();
+}
+.parrafoInstituciones {
+  @include vista();
+  @include margen();
+  text-align: center;   
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.boton{
+  text-align: center;
+  @include margen();
+}
+.txtAct{
+  text-align: center;
+  @include margen();
+}
 .ubicacion{
     @include vista();
     margin-top: 1rem;

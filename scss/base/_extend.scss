@@ -5,15 +5,22 @@
 }
 .imgHockey{
     @extend %disposicion;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 .imgPatin{
     @extend %disposicion;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 .imgConsejo{
-    margin-top: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
     @extend %disposicion;
   }
 .imgPrincipal{
-    display: flex;
-    justify-content: space-evenly;
+    @extend %disposicion;
+}
+.imgNoticia{
+  @extend %disposicion;
 }

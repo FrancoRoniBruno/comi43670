@@ -73,28 +73,31 @@
   }
   .back {
     text-decoration: none;
-    border: 1px solid black;
-    background-color: chocolate;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+    background-color: $celeste;
   }
   .noticia {
     text-align: center;
   }
-  .imgNoticia{
-    width: 450px;
-    height: 450px;
-  }
- 
-  .parrafoInstituciones {
+  .subtitulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  } 
+
+  
+  .parrafoNoticia {
+    text-align: center;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   
-  .parrafoNoticia {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
   /* galeria */
   .imgNino{
+    margin-top: 20px;
+    margin-bottom: 20px;
     display:grid;
     grid-template-columns: repeat(3,0.5fr);
     grid-template-rows: repeat(3,0.5fr);
@@ -104,11 +107,7 @@
 
   
   /* contacto*/
-  .form__container{
-    display: flex;
-    margin-top: 1rem;
-    justify-content: center;
-  }
+
   fieldset{
     display: flex;
     flex-direction: column;
@@ -148,6 +147,9 @@
     #imagenNoticia{
       flex-direction: column;
     }
+    .imgNoticia{
+      flex-direction: column;
+    }
     /* galeria */
     .imgNino{
       grid-template-columns: repeat(2,1fr);
@@ -183,6 +185,10 @@
     #imagenNoticia{
       flex-direction: column;
     }
+    .imgNoticia{
+      flex-direction: column;
+    }
+
     /* galeria*/
     .imgNino{
       grid-template-columns: repeat(1,1fr);
