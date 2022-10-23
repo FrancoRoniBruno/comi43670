@@ -16,6 +16,7 @@
     font-style: oblique;
     font-size: 50px;
     text-align: center;
+    color: $gris;
   }
  
   .parallax {
@@ -27,15 +28,10 @@
     background-size: cover;
     margin-bottom: 50px;
   }
-
-  
-  .scale:hover{
-    transform: scale();
-    transition: 1s;
-  }
   main section article img {
     margin: 20px;
     padding: 20px;
+    border-radius: 30px;
   }
   .instituciones{
     text-align: center;
@@ -43,25 +39,25 @@
   .info{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  .animacion:hover{
-    animation :cambioDeColores 5s;
+  .txtInst p{
+    padding: 30px;
+    font-size: 1.3rem;
   }
-  @keyframes cambioDeColores{
-    5%{
-      background-color: aqua;
-    }
-    25%{
-      background-color: greenyellow;
-    }
-    50%{
-      background-color: yellowgreen;
-    }
-    75%{
-      background-color: olive;
-    }
-    90%{
-      background-color: orange;
-    }
+  .txtInst img {
+    border-radius: 30px;
+  }
+  .nuestroPueblo h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $gris;
+  }
+  .sobreNosotros {
+    display: flex;
+    align-items: center;
+  }
+  .sobreNosotros p {
+    padding: 30px;
+    text-align: center;
   }
   .lista {
     text-align: center;
@@ -77,6 +73,7 @@
     text-transform: uppercase;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     background-color: $celeste;
+    padding: 5px;
   }
   .noticia {
     text-align: center;
@@ -90,11 +87,23 @@
   
   .parrafoNoticia {
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   
   /* galeria */
+  .paralaxGaleria {
+    background-image: url("./img/piquillinParalax.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
   .imgNino{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -117,29 +126,43 @@
     width: 40%;
     color:black;
     font-weight: bold;
-    background:cornflowerblue;
+    background:$celeste;
     font-size: 1.2rem;
     border-radius: 5px;
+    border: none;
   }
-
  
   /*pie de pagina */
-  footer{
+  footer {
     margin-top: 1rem;
-    border: map-get($map: $footer , $key: border);
-    bottom: 0;
-     a {
-    text-decoration: none;
-    color:black;
+    background-color: $gris;
+    padding: 20px;
   }
-}
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
 
+.subtitulo{
+  color: $gris;
+}
   @media only screen and (max-width: 768px){
     body{
       flex-direction: column;
       align-items: center;
     }
+    nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav .animation {
+      display: none;
+    }
     /*index*/
+    
     .imgPrincipal{
       flex-direction: column;
       justify-content: center;
@@ -177,10 +200,34 @@
       flex-direction: column;
       align-items: center;
     } 
+    nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav .animation {
+      display: none;
+    }
     /*index*/
+
+    .sobreNosotros {
+      flex-direction: column;
+    }
+  
+    .sobreNosotros img {
+      width: 500px;
+    }
      .imgPrincipal{
       flex-direction: column;
       justify-content: center;
+    }
+    .txtInst {
+      flex-direction: column-reverse;
+    }
+    .txtInst img {
+      width: 500px;
     }
     #imagenNoticia{
       flex-direction: column;
