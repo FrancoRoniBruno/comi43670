@@ -324,6 +324,12 @@ footer a {
     display: none;
   }
   /*index*/
+  .sobreNosotros {
+    flex-direction: column;
+  }
+  .sobreNosotros img {
+    width: 500px;
+  }
   .imgPrincipal {
     flex-direction: column;
     justify-content: center;
