@@ -328,6 +328,12 @@ footer a {
     flex-direction: column;
     justify-content: center;
   }
+  .txtInst {
+    flex-direction: column-reverse;
+  }
+  .txtInst img {
+    width: 500px;
+  }
   #imagenNoticia {
     flex-direction: column;
   }
